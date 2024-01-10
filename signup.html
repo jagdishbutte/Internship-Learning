@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-color: rgb(240, 244, 237);
+            text-align: center;
+        }
+
+        h1 {
+            color: brown;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .txt1,
+        .txt2 {
+            display: inline-block;
+            margin-right: 5px;
+            padding-top: 5px;
+            color: rgb(156, 11, 38);
+        }
+
+        .container {
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            background-color: aliceblue;
+            border: 2px solid;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <form class="container">
+        <p1 class="txt1">Enter Your Full Name:</p1>
+        <input class="txt2" type="text"><br><br>
+
+        <p1 class="txt1">Enter Email:</p1>
+        <input class="txt2" type="text"><br><br>
+
+        <p1 class="txt1">Create Password:</p1>
+        <input class="txt2" type="text"><br><br>
+
+        <p1 class="txt1">Confirm Password:</p1>
+        <input class="txt2" type="text"><br><br>
+
+        
+        <h4>Choose Gender</h4>
+        <input type="radio" id="male">
+        <label>Male</label><br>
+
+        <input type="radio" id="female">
+        <label>FeMale</label><br><br>
+
+        <button><a href="index.html">Sign Up</a></button><br>
+        <p class="txt1">Already have an account?</p>
+        <h4 class="txt2"><a href="signin.html" target="_blank">Sign In</a></h4>
+    </form>
+
+</body>
+
+</html>
