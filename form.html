@@ -1,19 +1,58 @@
 <html>
+
 <head>
     <title>Game Form</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+
+        h1 {
+            color: brown;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .txt1,
+        .txt2 {
+            display: inline-block;
+            margin-right: 5px;
+            padding-top: 5px;
+            color: rgb(156, 11, 38);
+        }
+
+        .container {
+        
+            
+            padding: 20px;
+            background-color: aliceblue;
+            border: 1px solid;
+            align-items: center;
+            position: absolute;
+            margin: auto;
+            top: 250;
+            bottom: 250;
+            left: 580;
+            right: 580;
+        }
+    </style>
 </head>
+
 <body>
-    <form>
-        <input type="text"><br>
-        <hr>
-        <input type="radio" id="male" name="r1">Male<br>
-        <input type="radio" id="female" name="r1">Female<br>
-        <input type="radio" id="other" name="r1">Other<br>
-        <hr>
-        <h3>Choose Game</h3>
-        <input type="checkbox">Cricket<br>
-        <input type="checkbox">Hocky<br>
-        <input type="checkbox">Soccer<br>
+
+    <form class="container">
+        <p1 class="txt1">Enter Your Name:</p1>
+        <input class="txt2" type="text"><br><br>
+
+        <p1 class="txt1">Enter Password:</p1>
+        <input class="txt2" type="text"><br><br>
+
+
+        <button>Sign In</button> <br>
+        <p class="txt1">Don't have an account?</p>
+        <h4 class="txt2"><a href="signup.html" target="_blank">Sign Up</a></h4>
+
     </form>
 </body>
+
 </html>
