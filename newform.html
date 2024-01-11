@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: url(Images/image1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: gold;">Registration Form</h1>
+
+    <form action="index.html"
+        style="border: 1px solid rgb(92, 204, 13); margin: auto; padding: 20px; position: relative; width: 400px; height: 500px;eight; background-color: rgb(211, 213, 206); bottom: 50px; top: 0px; left: 20px">
+
+        <label>Full Name :*</label><br>
+        <input type="text" placeholder="Enter Your Name" pattern="^[A-Za-z\s\-]+$" minlength="2" maxlength="30"
+            required><br>
+
+        <!-- Mobile Number -->
+        <label>Mobile :*</label><br>
+        <input type="tel" placeholder="Mobile No" pattern="[6789]\d{9}"
+            title="Please enter a valid 10-digit Indian mobile number" required>
+        <br>
+
+        <label>Email :*</label><br>
+        <input type="email" placeholder="Enter Your Email :" pattern=".+@gmail\.com|.+@yaahoo\.com" required><br>
+
+        <!-- Date of Birth -->
+        <label>Date of birth :</label><br>
+        <input type="date" min="1900-01-01" max="2004-12-31"><br><br>
+
+        <!-- Selection list  -->
+        <label>Choose Your Gender :</label><br>
+        <input type="radio" name="g" required>Male
+        <input type="radio" name="g" required>Female<br>
+        <br>
+
+        <!-- Dropdown list -->
+        <select>
+            <option>--Select City--</option>
+            <option>Mumbai</option>
+            <option>Pune</option>
+            <option>Nashik</option>
+        </select><br>
+
+        <label>Enter Full Address :</label><br>
+        <textarea placeholder="Enter Full Adress"></textarea><br><br>
+
+        <label type="password">Create Password :</label><br>
+        <input type="password" placeholder="Create Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$"
+            title="Password must be at least 8 characters long and include at least one letter and one digit"><br><br>
+
+
+        <!-- Checkbox  -->
+        <label>Select Interests :</label><br>
+        <input type="checkbox" name="g">Gaming
+        <input type="checkbox" name="g">Science & Technology
+        <input type="checkbox" name="g">Business
+        <input type="checkbox" name="g">Politics
+        <input type="checkbox" name="g">Entertainment
+        <br><br><br>
+
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>
