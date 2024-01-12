@@ -11,37 +11,72 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+
+        form {
+            border: 1px solid rgb(92, 204, 13);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            text-align: left;
+            margin: auto;
+            padding: 30px;
+            position: relative;
+            width: 400px;
+            height: 500px;
+            background-color: rgb(211, 213, 206);
+            bottom: 50px;
+            top: 0px;
+            left: 20px;
+        }
+
+        h1 {
+            color: gold;
+        }
+
+        .form-box {
+            margin-bottom: 10px;
+        }
+
+        .center-button {
+            text-align: center;
+            
+        }
     </style>
 </head>
 
 <body>
-    <h1 style="color: gold;">Registration Form</h1>
+    <h1>Registration Form</h1>
 
-    <form action="index.html"
-        style="border: 1px solid rgb(92, 204, 13); margin: auto; padding: 20px; position: relative; width: 400px; height: 500px;eight; background-color: rgb(211, 213, 206); bottom: 50px; top: 0px; left: 20px">
+    <form action="index.html">
 
-        <label>Full Name :*</label><br>
-        <input type="text" placeholder="Enter Your Name" pattern="^[A-Za-z\s\-]+$" minlength="2" maxlength="30"
-            required><br>
+        <div class="form-box">
+            <label>Full Name :*</label>
+            <input type="text" placeholder="Enter Your Name" pattern="^[A-Za-z\s\-]+$" minlength="2" maxlength="30"
+                required><br>
+        </div>
 
-        <!-- Mobile Number -->
-        <label>Mobile :*</label><br>
-        <input type="tel" placeholder="Mobile No" pattern="[6789]\d{9}"
-            title="Please enter a valid 10-digit Indian mobile number" required>
-        <br>
+        <div class="form-box">
+            <label>Mobile :*</label>
+            <input type="tel" placeholder="Mobile No" pattern="[6789]\d{9}"
+                title="Please enter a valid 10-digit Indian mobile number" required><br>
+        </div>
 
-        <label>Email :*</label><br>
-        <input type="email" placeholder="Enter Your Email :" pattern=".+@gmail\.com|.+@yaahoo\.com" required><br>
+        <div class="form-box">
+            <label>Email :*</label>
+            <input type="email" placeholder="Enter Your Email :" pattern=".+@gmail\.com|.+@yaahoo\.com" required><br>
+        </div>
 
-        <!-- Date of Birth -->
-        <label>Date of birth :</label><br>
-        <input type="date" min="1900-01-01" max="2004-12-31"><br><br>
+        <div class="form-box">
+            <label>Date of birth :</label>
+            <input type="date" min="1900-01-01" max="2004-12-31">
+        </div>
 
-        <!-- Selection list  -->
         <label>Choose Your Gender :</label><br>
-        <input type="radio" name="g" required>Male
+        <input type="radio" name="g" required>Male<br>
         <input type="radio" name="g" required>Female<br>
         <br>
+
 
         <!-- Dropdown list -->
         <select>
@@ -54,12 +89,11 @@
         <label>Enter Full Address :</label><br>
         <textarea placeholder="Enter Full Adress"></textarea><br><br>
 
-        <label type="password">Create Password :</label><br>
+        <label type="password">Create Password :</label>
         <input type="password" placeholder="Create Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$"
             title="Password must be at least 8 characters long and include at least one letter and one digit"><br><br>
 
 
-        <!-- Checkbox  -->
         <label>Select Interests :</label><br>
         <input type="checkbox" name="g">Gaming
         <input type="checkbox" name="g">Science & Technology
@@ -68,8 +102,9 @@
         <input type="checkbox" name="g">Entertainment
         <br><br><br>
 
-        <input type="submit">
-
+        <div class="center-button">
+            <button type="submit">Submit</button>
+        </div>
     </form>
 
 </body>
